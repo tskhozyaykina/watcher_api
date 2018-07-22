@@ -1,0 +1,56 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "error": {
+      "$id": "/properties/error",
+      "type": "object",
+      "properties": {
+        "code": {
+          "$id": "/properties/error/properties/code",
+          "type": "string",
+          "title": "The Code Schema ",
+          "default": "",
+          "examples": [
+            "validation_error"
+          ]
+        },
+        "description": {
+          "$id": "/properties/error/properties/description",
+          "type": "object",
+          "properties": {
+            "field1": {
+              "$id": "/properties/error/properties/description/properties/field1",
+              "type": "array",
+              "items": {
+                "$id": "/properties/error/properties/description/properties/field1/items",
+                "type": "string",
+                "title": "The 0th Schema ",
+                "default": "",
+                "examples": [
+                  "field1 should be this",
+                  "field1 should be that"
+                ]
+              }
+            },
+            "field2": {
+              "$id": "/properties/error/properties/description/properties/field2",
+              "type": "array",
+              "items": {
+                "$id": "/properties/error/properties/description/properties/field2/items",
+                "type": "string",
+                "title": "The 0th Schema ",
+                "default": "",
+                "examples": [
+                  "invalid value for field 2"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

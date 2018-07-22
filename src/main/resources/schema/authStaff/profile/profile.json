@@ -1,0 +1,75 @@
+
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "user": {
+          "$id": "/properties/data/properties/user",
+          "type": "object",
+          "properties": {
+            "first_name": {
+              "$id": "/properties/data/properties/user/properties/first_name",
+              "type": "string",
+              "title": "The First_name Schema ",
+              "default": "",
+              "examples": [
+                "String"
+              ]
+            },
+            "email": {
+              "$id": "/properties/data/properties/user/properties/email",
+              "type": "string",
+              "title": "The Email Schema ",
+              "default": "",
+              "examples": [
+                "Ivanovi@test.com"
+              ]
+            },
+            "id": {
+              "$id": "/properties/data/properties/user/properties/id",
+              "type": "integer",
+              "title": "The Id Schema ",
+              "default": 0,
+              "examples": [
+                412
+              ]
+            },
+            "role": {
+              "$id": "/properties/data/properties/user/properties/role",
+              "type": "string",
+              "title": "The Role Schema ",
+              "default": "",
+              "examples": [
+                "employee"
+              ]
+            },
+            "is_staff": {
+              "$id": "/properties/data/properties/user/properties/is_staff",
+              "type": "boolean",
+              "title": "The Is_staff Schema ",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "last_name": {
+              "$id": "/properties/data/properties/user/properties/last_name",
+              "type": "string",
+              "title": "The Last_name Schema ",
+              "default": "",
+              "examples": [
+                "String"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
