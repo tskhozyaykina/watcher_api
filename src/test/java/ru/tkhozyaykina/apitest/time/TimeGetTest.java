@@ -26,11 +26,11 @@ public class TimeGetTest extends PreconditionForRmr {
     public void getTime() {
         String url = RestAssured.baseURI + "/logged_time/";
         Map<String, String> params = new HashMap<>();
-//        params.put("from", "2018-05-11");
-//        params.put("to", "2018-07-11");
+       params.put("from", "2018-05-11");
+        params.put("to", "2018-07-11");
         Response response = given()
                 .cookie("access_token", auth)
-//                .params(params)
+              .params(params)
                 .get(url);
         System.out.println(response);
 

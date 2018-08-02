@@ -34,7 +34,7 @@ public class ProfileTest extends PreconditionForRmr {
         String emailExpected = "t.khozyaykina@redmadrobot.com";
         String roleExpected = "employee";
         String lastNameExpected = "Khozyaykina";
-        int idExpected = 410;
+        int idExpected = 6;
         boolean isStaffExpected = false;
 
 
